@@ -105,3 +105,17 @@ sure what the actual expected alternative to `#![macro_use]` is supposed to
 be, but I had some luck directly `use`-ing the macro into my scope like a
 function? So a macro named `foo` in crate `bar` would be imported with `use
 bar::foo;` and then the macro seemed to work...
+
+## No `cargo version` built-in
+
+Coming from Node, this feels like a sharp corner: I have to manually edit
+Cargo.toml, change the version, run `cargo build` to update the `Cargo.lock`
+so I don't end up with a random diff, then I have to manually `git ci -a -m
+'vX.Y.Z'`, `git tag -a vX.Y.Z`, fill in a message, `git push --follow-tags`,
+and **then** `cargo publish`. Just for a basic release. I'm used to at least
+having a baseline of `npm version patch && git push --follow-tags && npm pub`.
+
+### Solution
+
+Having a _baseline_ `cargo version` built in would go a long way towards
+making publishing as a newbie a smoother process.
