@@ -119,3 +119,19 @@ having a baseline of `npm version patch && git push --follow-tags && npm pub`.
 
 Having a _baseline_ `cargo version` built in would go a long way towards
 making publishing as a newbie a smoother process.
+
+## No `nyc` equivalent for coverage
+
+There's no single coverage tool you can just install that integrates with
+`cargo test` and gives useful coverage feedback in the command line, works
+with coveralls/codecov, etc. The best you get is something [as described in
+this 3-year-old forum
+thread](https://users.rust-lang.org/t/howto-generating-a-branch-coverage-report/8524)
+which... honestly I'm not going to bother because this is an immense amount of
+fucking around with stuff just to get my percentages?
+
+I'm so used to having [`nyc`](https://npm.im/nyc) available :()
+
+### Solution
+
+Rust -really- needs an `nyc` port.
