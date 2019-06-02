@@ -38,9 +38,10 @@ where you have multiple different error returns and you want to use `?`.
 
 ### Solutions
 
-Establishing an error-definition pattern a-la
-https://crates.io/crates/error-chain in the Book would be super helpful, if
-not integrating error-chain itself.
+Establishing an error-definition pattern a-la https://crates.io/crates/failure
+in the Book would be super helpful, if not integrating `failure` itself.
+
+Update: I'm supposed to use `failure`, not `error-chain`, per @ag_dubs. SIGH
 
 ## Returning iterators
 
