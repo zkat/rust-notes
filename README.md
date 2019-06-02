@@ -43,6 +43,8 @@ in the Book would be super helpful, if not integrating `failure` itself.
 
 Update: I'm supposed to use `failure`, not `error-chain`, per @ag_dubs. SIGH
 
+Update: The plot thickens! https://twitter.com/hoodie_de/status/1135192684916879360 claims I should not be returning failure::Error from public APIs but this is not clear at all and I'm not sure what the expected alternative is.
+
 ## Returning iterators
 
 Iterators are super duper useful! Infortunately, it's super hard to figure out
