@@ -28,7 +28,7 @@ In general the pattern is often replaced by things like variadic functions or
 ad-hoc option arguments in other languages.
 
 This isn't a terrible pattern, but even going as far as introducing
-https://crates.io/crates/typed-builder into the language or into the Book
+https://crates.io/crates/derive_builder into the language or into the Book
 would be nice.
 
 ## Multi-type errors
